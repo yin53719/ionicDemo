@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
-import { IonicPage,NavController } from 'ionic-angular/umd';
+import { IonicPage,NavController } from 'ionic-angular';
 
 @IonicPage()
-
 @Component({
   selector: 'page-brokeradd',
-  templateUrl: 'brokeradd.html'
+  templateUrl: 'BrokerAdd.html'
 })
-export class BrokeraddPage { 
-
-    constructor(public navCtrl: NavController) { }
+export class BrokerAddPage { 
+  account: { email: string, password: string } = {
+    email: 'test@example.com',
+    password: 'test'
+  };
+    constructor(public navCtrl: NavController) { 
+      
+    }
 }

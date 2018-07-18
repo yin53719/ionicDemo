@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage,NavController } from 'ionic-angular/umd';
+import { IonicPage,NavController } from 'ionic-angular';
 
 @IonicPage()
-
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -14,7 +13,9 @@ export class HomePage {
   }
 
 
-  pushTestPage() { }
+  pushTestPage() {
+    this.navCtrl.push('TabsPage')
+   }
 
   showNavbar() {
     

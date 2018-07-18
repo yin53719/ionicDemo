@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { IonicPageModule } from 'ionic-angular/umd';
+import { IonicPageModule } from 'ionic-angular';
 
-import { BrokeraddPage } from './brokeradd';
+import { BrokerAddPage } from './BrokerAdd';
 
 @NgModule({
   declarations: [
-    BrokeraddPage,
+    BrokerAddPage,
   ],
   imports: [
-    IonicPageModule.forChild(BrokeraddPage),
+    IonicPageModule.forChild(BrokerAddPage),
     TranslateModule.forChild()
   ],
   exports: [
-    BrokeraddPage
+    BrokerAddPage
   ]
 })
-export class BrokeraddPageModule { }
+export class BrokerAddModule { }

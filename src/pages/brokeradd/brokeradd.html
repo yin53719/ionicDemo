@@ -5,8 +5,20 @@
       </ion-title>
     </ion-navbar>
   </ion-header>
-  
-  <ion-content padding>
-    <p>
-      addddddddddddddd
-  </ion-content>
+<ion-content padding>
+  <ion-list>
+  <ion-item>
+    <ion-label>Username</ion-label>
+    <ion-input type="text" [(ngModel)]="account.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="account.password"></ion-input>
+  </ion-item>
+
+</ion-list>
+<div padding>
+  <button ion-button>Default</button>
+</div>
+</ion-content>
