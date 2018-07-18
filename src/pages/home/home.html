@@ -1,0 +1,158 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <!-- <img (click)="pushTestPage()" src="../../assets/../../assets/images/ye.png" alt=""> -->
+    <ion-buttons start>
+      <button ion-button>
+        <ion-icon name="contact"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>home</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="showNavbar()">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-navbar class="hideNavbar" color="dark">
+    <!-- <ion-row>
+      <ion-col col-10> -->
+    <ion-searchbar (ionBlur)="hideNavbar()"></ion-searchbar>
+    <!-- </ion-col> -->
+    <!-- <ion-col col-2 style="text-align: center;line-height:2.7">
+        <ion-buttons>
+          <button ion-button (click)="pushTestPage()">
+            <ion-icon name="add"></ion-icon>
+          </button>
+        </ion-buttons>
+      </ion-col> -->
+    <!-- </ion-row> -->
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-row class="ttile">
+    <ion-col col-1 class="aln_center">
+      <img src="../../assets/images/daiban.png" alt="">
+    </ion-col>
+    <ion-col col-2 class="aln_center">
+      <span>待办</span>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="fl left" onclick="gotoDfp();">
+      <div class="pic fl">
+        <img src="../../assets/images/up01.jpg" alt="">
+      </div>
+      <div class="txt fl" id="allocated">
+        <a href="javascript:void(0)">
+          <p id="dfp_num">0</p>
+          <span>待分配</span>
+        </a>
+      </div>
+    </ion-col>
+    <ion-col class="fr left addMd" (click)="pushTestPage()">
+      <div class="pic fl">
+        <img src="../../assets/images/up02.png" alt="" class="add">
+      </div>
+      <div class="txt fl">
+        <p>新 增</p>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row class="down">
+    <ion-col col-2>
+      <img style="min-height: 80px;" src="../../assets/images/down01.jpg" alt="" class="fl">
+    </ion-col>
+    <ion-col col-10>
+      <ion-row class="todo_list aln_centerC">
+        <ion-col class="aln_centerC">
+          <div class="aln_centerC" id="dgn_first">
+            <a href="xs_gj_list.html?type=1">
+              <p id="dgn_num1">0</p>
+              <p>待跟进</p>
+            </a>
+          </div>
+        </ion-col>
+        <ion-col class="aln_centerC">
+          <div class="aln_centerC">
+            <a href="xs_gj_list.html?type=1">
+              <p id="dgn_num1">0</p>
+              <p>当日跟进</p>
+            </a>
+          </div>
+        </ion-col>
+        <ion-col class="aln_centerC">
+          <div class="aln_centerC">
+            <a href="xs_gj_list.html?type=1">
+              <p id="dgn_num1">0</p>
+              <p>超期</p>
+            </a>
+          </div>
+        </ion-col>
+        <ion-col class="aln_centerC">
+          <div class="aln_centerC">
+            <a href="xs_gj_list.html?type=1">
+              <p id="dgn_num1">0</p>
+              <p>未超期</p>
+            </a>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ttile">
+    <ion-col col-1 class="aln_center">
+      <img src="../../assets/images/report.png" alt="">
+    </ion-col>
+    <ion-col col-2 class="aln_center">
+      <span>报表</span>
+    </ion-col>
+  </ion-row>
+  <table class="report_table">
+    <tr>
+      <td style="width: 33px;">
+        <img src="../../assets/images/one.png" alt="" class="fl" style="height: 33px;width: 33px;">
+      </td>
+      <td style="padding-left: 20px;">
+        <span class="fl">跟进</span>
+      </td>
+      <td style="width: 60px;text-align: right;">
+        <div class="badge">12</div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="../../assets/images/two.png" alt="" class="fl" style="height: 33px;width: 33px;">
+      </td>
+      <td style="padding-left: 20px;">
+        <span class="fl">订单</span>
+      </td>
+      <td style="width: 60px;text-align: right;">
+        <div class="badge">12</div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="../../assets/images/three.png" alt="" class="fl" style="height: 33px;width: 33px;">
+      </td>
+      <td style="padding-left: 20px;">
+        <span class="fl">到店</span>
+      </td>
+      <td style="width: 60px;text-align: right;">
+        <div class="badge">12</div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="../../assets/images/four.png" alt="" class="fl" style="height: 33px;width: 33px;">
+      </td>
+      <td style="padding-left: 20px;">
+        <span class="fl">新建</span>
+      </td>
+      <td style="width: 60px;text-align: right;">
+        <div class="badge">12</div>
+      </td>
+    </tr>
+  </table>
+</ion-content>
