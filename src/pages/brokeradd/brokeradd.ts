@@ -9,8 +9,8 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 })
 export class BrokerAddPage { 
   account: { email: string, password: string } = {
-    email: 'test@example.com',
-    password: 'test'
+    email: '',
+    password: ''
   };
     constructor(public navCtrl: NavController,private camera: Camera) { 
       
