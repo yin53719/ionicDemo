@@ -33,8 +33,8 @@ export class User {
    * Send a POST request to our login endpoint with the data
    * the user entered on the form.
    */
-  login(accountInfo: any) {
-    let seq = this.api.post('login', accountInfo).share();
+  login(accountInfo: any,reqOps:any) {
+    let seq = this.api.post('login', accountInfo,reqOps);
 
     seq.subscribe((res: any) => {
       // If the API returned a successful response, mark the user as logged in
